@@ -4,7 +4,7 @@
 }
 
 .nav {
-  background-color: white;
+  background-color: pink;
 }
 
 .navbar-list {
@@ -18,6 +18,9 @@
 .navbar-list > li {
   padding: 10px;
   list-style: none;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: white;
 }
 
 li a:hover {
@@ -25,6 +28,7 @@ li a:hover {
   color: white;
   font-size: 1.5rem;
 }
+
 section {
   display: block;
 }
@@ -45,7 +49,7 @@ section {
   flex-direction: column;
   align-items: center;
   color: white;
-  padding: 200px;
+  padding-top: 125px;
 }
 
 .hero-image > h3 {
@@ -53,16 +57,21 @@ section {
   flex-direction: row;
   justify-content: center;
   color: white;
-  padding: 100px;
+  padding: 125px;
   font-size: 2.5rem;
   font-weight: normal;
+}
+@media (max-width: 480px) {
+  .hero-image h3 {
+    text-align: center;
+  }
 }
 
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  background-color: pink;
+  background-color: white;
   justify-items: center;
   height: 875px;
 }
@@ -73,17 +82,16 @@ section {
   justify-content: center;
   align-items: center;
   font-family: cursive;
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: bold;
-  color: white;
-  overflow: visible;
+  color: pink;
 }
 
 .about p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: white;
+  color: pink;
   padding-inline: 100px;
   padding-bottom: 100px;
   font-size: 1.5rem;
@@ -96,11 +104,33 @@ section {
   border-radius: 10px;
 }
 
+@media (max-width: 480px) and (max-width: 767px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: center;
+    height: 1000px;
+  }
+  .about h1 {
+    padding-top: 50px;
+    font-size: 3rem;
+  }
+  .about p {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .about img {
+    margin-inline: 50px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+}
 .skills {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: deeppink;
+  background-color: pink;
 }
 
 .skills h1 {
@@ -118,23 +148,28 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: darkviolet;
+  background-color: white;
   padding: 100px;
   font-family: cursive;
   font-size: 5rem;
   font-weight: bold;
-  color: white;
+  color: pink;
+}
+@media (max-width: 480px) {
+  .skills h1 {
+    padding-top: 50px;
+  }
 }
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   padding-top: 50px;
-  background-color: darkviolet;
+  background-color: white;
 }
 
 .projects p {
-  color: white;
+  color: pink;
   font-size: 1.5rem;
   font-weight: normal;
 }
@@ -146,10 +181,31 @@ section {
 .project-display {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
   padding-bottom: 50px;
 }
 
+.project-display p {
+  padding-top: 20px;
+}
+
+@media (max-width: 480px) {
+  #Projects h1 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .project-display img {
+    align-self: center;
+    width: 100px;
+    height: 100px;
+  }
+  .project-display p {
+    padding-inline: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+}
 .contact {
   display: flex;
   flex-direction: column;
@@ -183,6 +239,14 @@ section {
   font-weight: normal;
   padding-bottom: 100px;
 }
+
+@media (max-width: 480px) {
+  .contact h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -190,4 +254,6 @@ footer {
   padding: 20px;
   background-color: white;
   color: pink;
+  font-size: 1rem;
+  font-weight: normal;
 }
