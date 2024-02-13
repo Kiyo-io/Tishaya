@@ -32,6 +32,14 @@ li a:hover {
 section {
   display: block;
 }
+
+.sticky {
+  position: fixed;
+  z-index: 1;
+
+  width: 100%;
+}
+
 .hero-image {
   background-image: url(./img/hero-img.jpg);
   height: 50%;
