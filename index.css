@@ -61,12 +61,19 @@ section {
   font-size: 2.5rem;
   font-weight: normal;
 }
-@media (max-width: 480px) {
+/* Smartphones */
+@media (min-width: 320px) and (max-width: 480px) {
   .hero-image h3 {
     text-align: center;
+    font-size: 1.5rem;
   }
 }
-
+/* mini Smartphones */
+@media (max-width: 320px) {
+  .hero-image h3 {
+    font-size: 1rem;
+  }
+}
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -103,8 +110,14 @@ section {
   margin-top: 75px;
   border-radius: 10px;
 }
-/* SmartPhones */
-@media (max-width: 480px), (max-width: 767px) {
+/* Small Laptops/Desktops */
+@media (min-width: 767px) and (max-width: 1440px) {
+  .about h1 {
+    font-size: 5rem;
+  }
+} /* SmartPhones */
+@media (min-width: 320px) and (max-width: 480px),
+  (min-width: 480px) and (max-width: 767px) {
   .about {
     display: flex;
     flex-direction: column;
@@ -128,16 +141,12 @@ section {
     image-rendering: auto;
   }
 }
-/* Tablets */
-/* @media (max-width: 767px) {
-  .about h1 {
-    font-size: 3rem;
-    padding: 0;
-  }
+/* mini SmartPhones */
+@media (max-width: 320px) {
   .about img {
-    scale: 100%;
+    width: 75%;
   }
-} */
+}
 .skills {
   display: flex;
   flex-direction: column;
@@ -156,6 +165,11 @@ section {
   scale: 125%;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .skills img {
+    scale: 75%;
+  }
+}
 #Projects h1 {
   display: flex;
   flex-direction: row;
@@ -167,7 +181,8 @@ section {
   font-weight: bold;
   color: pink;
 }
-@media (max-width: 480px) {
+/* Smartphones */
+@media (min-width: 320px) and (max-width: 480px) {
   .skills h1 {
     padding-top: 50px;
   }
@@ -201,8 +216,9 @@ section {
 .project-display p {
   padding-top: 20px;
 }
-
-@media (max-width: 480px), (max-width: 767px) {
+/* Smartphones and Tablets */
+@media (min-width: 320px) and (max-width: 480px),
+  (min-width: 480px) and (max-width: 767px) {
   #Projects h1 {
     padding-top: 10px;
     padding-bottom: 5px;
@@ -251,10 +267,16 @@ section {
   font-weight: normal;
   padding-bottom: 100px;
 }
-
-@media (max-width: 480px) {
+/* Smartphones */
+@media (min-width: 320px) and (max-width: 480px) {
   .contact h3 {
     font-size: 2rem;
+    text-align: center;
+  }
+}
+/* mini SmartPhones  */
+@media (max-width: 320px) {
+  .contact h1 {
     text-align: center;
   }
 }
