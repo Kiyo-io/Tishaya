@@ -286,6 +286,7 @@ section {
 
 .projects img {
   border-radius: 5px;
+  align-self: center;
   width: 200px;
   height: 200px;
 }
