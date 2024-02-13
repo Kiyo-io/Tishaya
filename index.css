@@ -2,7 +2,37 @@
   margin: 0;
   padding: 0;
 }
+/*  Google Fonts */
+/* H1 */
+.sofia-regular {
+  font-family: "Sofia", cursive;
 
+  font-style: normal;
+}
+/* H3 */
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* FOOTER */
+.cormorant-garamond-light {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/* P */
+.cormorant-garamond-regular {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* NAVBAR */
+.cormorant-garamond-semibold {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: normal;
+}
 .nav {
   background-color: pink;
 }
@@ -27,6 +57,7 @@ li a:hover {
   background-color: pink;
   color: white;
   font-size: 1.5rem;
+  font-family: "Lora", serif;
 }
 
 section {
@@ -50,8 +81,7 @@ section {
 }
 
 .hero-image > h1 {
-  font-family: cursive;
-  font-size: 5rem;
+  font-size: 8rem;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -96,8 +126,8 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: cursive;
-  font-size: 8rem;
+
+  font-size: 4rem;
   font-weight: bold;
   color: pink;
 }
@@ -121,7 +151,7 @@ section {
 /* Small Laptops/Desktops */
 @media (min-width: 767px) and (max-width: 1440px) {
   .about h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 } /* SmartPhones */
 @media (min-width: 320px) and (max-width: 480px),
@@ -136,7 +166,7 @@ section {
   }
   .about h1 {
     padding-top: 50px;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .about p {
     padding-bottom: 50px;
@@ -164,7 +194,7 @@ section {
 
 .skills h1 {
   padding-top: 100px;
-  font-family: cursive;
+
   font-size: 5rem;
   font-weight: bold;
   color: white;
@@ -184,7 +214,7 @@ section {
   justify-content: center;
   background-color: white;
   padding: 100px;
-  font-family: cursive;
+
   font-size: 5rem;
   font-weight: bold;
   color: pink;
@@ -206,7 +236,9 @@ section {
 .projects p {
   color: pink;
   font-size: 1.5rem;
-  font-weight: normal;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .projects img {
@@ -249,7 +281,6 @@ section {
 }
 
 .contact h1 {
-  font-family: cursive;
   font-size: 5rem;
   font-weight: bold;
   display: flex;
