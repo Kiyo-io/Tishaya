@@ -27,6 +27,21 @@
   font-weight: 400;
   font-style: normal;
 }
+/* P LINKS */
+.cormorant-garamond-semibold-italic {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: none;
+  color: deeppink;
+}
+/* P ITALIC */
+.italic-style {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+  color: lightcoral;
+}
 /* NAVBAR */
 .cormorant-garamond-semibold {
   font-family: "Cormorant Garamond", serif;
@@ -160,15 +175,14 @@ section {
 }
 
 .about p {
-  display: flex;
+  display: inline;
   flex-direction: row;
   justify-content: center;
   color: pink;
   padding-inline: 100px;
   padding-bottom: 100px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: normal;
-  overflow: scroll;
 }
 
 .about img {
@@ -179,6 +193,9 @@ section {
 @media (min-width: 767px) and (max-width: 1440px) {
   .about h1 {
     font-size: 58px;
+  }
+  .about p {
+    overflow: scroll;
   }
 } /* SmartPhones */
 @media (min-width: 320px) and (max-width: 480px),
@@ -197,7 +214,9 @@ section {
   }
   .about p {
     padding-bottom: 50px;
+
     text-align: center;
+    overflow: scroll;
   }
   .about img {
     margin-inline: 50px;
@@ -219,6 +238,9 @@ section {
   .about h1 {
     font-size: 50px;
     text-align: center;
+  }
+  .about p {
+    overflow: scroll;
   }
   .about img {
     width: 75%;
