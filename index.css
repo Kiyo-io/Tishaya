@@ -335,6 +335,7 @@ section {
     font-size: 45px;
     padding-top: 10px;
     padding-bottom: 5px;
+    text-align: center;
   }
   .project-display img {
     align-self: center;
