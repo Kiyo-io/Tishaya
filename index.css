@@ -320,7 +320,7 @@ section {
 .project-display {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   flex-wrap: wrap;
   padding-bottom: 50px;
 }
