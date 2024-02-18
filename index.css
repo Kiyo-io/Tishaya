@@ -33,7 +33,7 @@
   font-weight: 600;
   font-style: italic;
   text-decoration: none;
-  color: deeppink;
+  color: #660738;
 }
 /* P ITALIC */
 .italic-style {
@@ -49,7 +49,7 @@
   font-style: normal;
 }
 .nav {
-  background-color: pink;
+  background-color: #660738;
 }
 
 .navbar-list {
@@ -67,8 +67,8 @@
 }
 
 li a:hover {
-  background-color: pink;
-  color: deeppink;
+  background-color: #660738;
+  color: #660738;
   font-size: 1.5rem;
   font-family: "Lora", serif;
   text-decoration: none;
@@ -103,7 +103,7 @@ section {
 
 /* HERO SECTION */
 .hero-image {
-  background-image: url(./img/hero-img.jpg);
+  background-image: url(./img/hero-img-2.jpg);
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -173,14 +173,14 @@ section {
 
   font-size: 5rem;
   font-weight: bold;
-  color: pink;
+  color: #660738;
 }
 
 .about p {
   display: inline;
   flex-direction: row;
   justify-content: center;
-  color: pink;
+  color: #660738;
   padding-inline: 100px;
   padding-bottom: 100px;
   font-size: 1.3rem;
@@ -253,7 +253,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: pink;
+  background-color: #660738;
 }
 
 .skills h1 {
@@ -297,7 +297,7 @@ section {
 
   font-size: 5rem;
   font-weight: bold;
-  color: pink;
+  color: #660738;
 }
 
 .projects {
@@ -309,7 +309,7 @@ section {
 }
 
 .projects p {
-  color: pink;
+  color: #660738;
   font-size: 1.5rem;
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
@@ -326,20 +326,19 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-bottom: 50px;
 }
 .project-display h3 {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 2rem;
-  color: pink;
+  color: #660738;
 }
 
 .project-display a {
   padding-top: 20px;
   text-decoration: none;
-  color: hotpink;
+  color: #660738;
   font-size: 1.5rem;
 }
 
@@ -462,7 +461,7 @@ footer {
   justify-content: center;
   padding: 20px;
   background-color: white;
-  color: pink;
+  color: #660738;
   font-size: 1rem;
   font-weight: normal;
 }
