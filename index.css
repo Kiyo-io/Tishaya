@@ -42,7 +42,7 @@
   font-style: italic;
   color: lightcoral;
 }
-/* NAVBAR */
+/* NAVBAR SECTION */
 .cormorant-garamond-semibold {
   font-family: "Cormorant Garamond", serif;
   font-weight: 600;
@@ -101,6 +101,7 @@ section {
   width: 100%;
 }
 
+/* HERO SECTION */
 .hero-image {
   background-image: url(./img/hero-img.jpg);
   height: 50%;
@@ -154,6 +155,7 @@ section {
     font-size: 1rem;
   }
 }
+/* ABOUT SECTION */
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -246,6 +248,7 @@ section {
     width: 75%;
   }
 }
+/* SKILLS SECTION */
 .skills {
   display: flex;
   flex-direction: column;
@@ -269,18 +272,6 @@ section {
     scale: 75%;
   }
 }
-#Projects h1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  background-color: white;
-  padding: 100px;
-
-  font-size: 5rem;
-  font-weight: bold;
-  color: pink;
-}
 /* Smartphones */
 @media (min-width: 320px) and (max-width: 480px) {
   .skills h1 {
@@ -294,11 +285,26 @@ section {
     scale: 65%;
   }
 }
+
+/* PROJECTS SECTION */
+#Projects h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: white;
+  padding: 100px;
+
+  font-size: 5rem;
+  font-weight: bold;
+  color: pink;
+}
+
 .projects {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  padding-top: 50px;
+
   background-color: white;
 }
 
@@ -314,19 +320,32 @@ section {
   border-radius: 5px;
   align-self: center;
   width: 200px;
-  height: 200px;
 }
 
 .project-display {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+
   padding-bottom: 50px;
 }
-
-.project-display p {
+.project-display h3 {
   padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  color: pink;
+}
+
+.project-display a {
+  padding-top: 20px;
+  text-decoration: none;
+  color: hotpink;
+  font-size: 1.5rem;
+}
+
+#skill {
+  scale: 50%;
+  width: 80%;
 }
 /* Smartphones and Tablets */
 @media (min-width: 320px) and (max-width: 480px),
@@ -342,26 +361,41 @@ section {
     width: 100px;
     height: 100px;
   }
-  .project-display p {
+  .project-display h3 {
+    font-size: 1.1rem;
+  }
+  .project-display a {
     padding-inline: 10px;
     padding-top: 10px;
     text-align: center;
   }
 }
+#skill {
+  scale: 80%;
+  width: 100%;
+}
+
 @media (max-width: 320px) {
   .project-display img {
     align-self: center;
     width: 75px;
     height: 75px;
   }
-  .project-display p {
+  .project-display h3 {
+    font-size: 1rem;
+  }
+  .project-display a {
     padding-inline: 10px;
     padding-top: 10px;
     text-align: center;
     font-size: 15px;
   }
 }
-
+#skill {
+  scale: 50%;
+  width: 125%;
+}
+/* CONTACT */
 .contact {
   display: flex;
   flex-direction: column;
