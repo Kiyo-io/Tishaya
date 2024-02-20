@@ -164,13 +164,14 @@ section {
   justify-content: center;
   align-items: center;
   height: calc(100dvh - 49px);
+  height: 50%;
 }
 
 .about-div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 45%;
+  width: 50%;
 }
 
 .about-div h1 {
@@ -193,6 +194,7 @@ section {
   font-size: 1.3rem;
   font-weight: normal;
   text-align: justify;
+  width: 80%;
 }
 
 .my-img {
@@ -201,17 +203,15 @@ section {
   scale: 50%;
 }
 /* Small Laptops/Desktops */
-@media (min-width: 767px) and (max-width: 1500px) {
+@media (min-width: 767px) and (max-width: 1280px) {
   #About {
     height: 50%;
   }
   .about-div h1 {
-    font-size: 2.8rem;
+    font-size: 3.8rem;
   }
   .about-div p {
-    height: 50%;
-
-    font-size: 1rem;
+    font-size: 18px;
   }
   .about-div img {
     display: grid;
@@ -227,7 +227,7 @@ section {
   }
 
   .about-div h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
   .about-div p {
     width: 130%;
@@ -243,12 +243,24 @@ section {
     flex-direction: column;
     height: 50%;
   }
+  .about-div h1 {
+    font-size: 30px;
+  }
+  .about-div p {
+    width: 155%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .about-div img {
+    scale: 90%;
+  }
 }
 /* mini SmartPhones */
 @media (max-width: 320px) {
 }
 /* SKILLS SECTION */
 .skills {
+  height: calc(100dvh - 49px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -487,7 +499,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   color: #660738;
   font-size: 1rem;
