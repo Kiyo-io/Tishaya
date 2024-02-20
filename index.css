@@ -92,6 +92,7 @@ li a:hover {
 
 section {
   display: block;
+  height: 100dvh;
 }
 
 .sticky {
@@ -102,9 +103,10 @@ section {
 }
 
 /* HERO SECTION */
+
 .hero-image {
+  height: 100dvh;
   background-image: url(./img/hero-img-2.jpg);
-  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -129,6 +131,7 @@ section {
   padding: 125px;
   font-size: 2.5rem;
   font-weight: normal;
+  text-align: center;
 }
 /* Small Laptops/Desktops */
 @media (min-width: 480px) and (max-width: 767px) {
@@ -156,27 +159,32 @@ section {
   }
 }
 /* ABOUT SECTION */
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  background-color: white;
-  justify-items: center;
-  height: 875px;
+#About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100dvh - 49px);
+  height: 50%;
 }
 
-.about h1 {
+.about-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.about-div h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   font-size: 5rem;
   font-weight: bold;
   color: #660738;
 }
 
-.about p {
+.about-div p {
   display: inline;
   flex-direction: row;
   justify-content: center;
@@ -185,71 +193,74 @@ section {
   padding-bottom: 100px;
   font-size: 1.3rem;
   font-weight: normal;
+  text-align: justify;
+  width: 80%;
 }
 
-.about img {
-  margin-top: 75px;
+.my-img {
   border-radius: 10px;
+  width: 100%;
+  scale: 50%;
 }
 /* Small Laptops/Desktops */
-@media (min-width: 767px) and (max-width: 1440px) {
-  .about h1 {
-    font-size: 58px;
+@media (min-width: 767px) and (max-width: 1280px) {
+  #About {
+    height: 50%;
   }
-  .about p {
-    overflow: scroll;
+  .about-div h1 {
+    font-size: 3.8rem;
+  }
+  .about-div p {
+    font-size: 18px;
+  }
+  .about-div img {
+    display: grid;
   }
 } /* SmartPhones */
-@media (min-width: 320px) and (max-width: 480px),
-  (min-width: 480px) and (max-width: 767px) {
-  .about {
+@media (min-width: 480px) and (max-width: 767px) {
+  #About {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     justify-content: center;
     align-items: center;
-    height: 1000px;
+    height: 70%;
   }
-  .about h1 {
-    font-size: 50px;
-    padding-top: 50px;
-  }
-  .about p {
-    padding-bottom: 50px;
 
-    text-align: center;
-    overflow: scroll;
+  .about-div h1 {
+    font-size: 2.4rem;
   }
-  .about img {
-    margin-inline: 50px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    image-rendering: auto;
+  .about-div p {
+    width: 130%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .about-div img {
+    scale: 90%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  #About {
+    flex-direction: column;
+    height: 50%;
+  }
+  .about-div h1 {
+    font-size: 30px;
+  }
+  .about-div p {
+    width: 155%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .about-div img {
+    scale: 90%;
   }
 }
 /* mini SmartPhones */
 @media (max-width: 320px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-content: center;
-    align-items: center;
-    height: 1000px;
-  }
-  .about h1 {
-    font-size: 50px;
-    text-align: center;
-  }
-  .about p {
-    overflow: scroll;
-  }
-  .about img {
-    width: 75%;
-  }
 }
 /* SKILLS SECTION */
 .skills {
+  height: calc(100dvh - 49px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -287,6 +298,7 @@ section {
 }
 
 /* PROJECTS SECTION */
+
 #Projects h1 {
   display: flex;
   flex-direction: row;
@@ -361,12 +373,13 @@ section {
     height: 100px;
   }
   .project-display h3 {
-    font-size: 1.1rem;
+    font-size: 15px;
   }
   .project-display a {
     padding-inline: 10px;
     padding-top: 10px;
     text-align: center;
+    font-size: inherit;
   }
 }
 #skill {
@@ -428,9 +441,39 @@ section {
   padding-bottom: 100px;
 }
 
+.hero-image-2 {
+  height: calc(100dvh - 49px);
+  background-image: url(./img/hero-img-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 25%;
+  padding-bottom: 10px;
+  gap: 10px;
+}
+.socials a {
+  height: 30px;
+  width: 30px;
+}
+.socials img {
+  width: 20%;
+  scale: 4;
+}
+
+/* #linkedin-logo-scale {
+  scale: 2;
+} */
 @media (min-width: 480px) and (max-width: 767px) {
   .contact h3 {
     text-align: center;
+    font-size: 2.3rem;
   }
 }
 /* Smartphones */
@@ -443,6 +486,13 @@ section {
     font-size: 2rem;
     text-align: center;
   }
+  .socials {
+    gap: 20px;
+  }
+  .socials img {
+    width: 20%;
+    scale: 10;
+  }
 }
 /* mini SmartPhones  */
 @media (max-width: 320px) {
@@ -453,15 +503,20 @@ section {
     font-size: 25px;
     text-align: center;
   }
+  .socials {
+    gap: 20px;
+  }
+  .socials img {
+    width: 20%;
+    scale: 8;
+  }
 }
 
 footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
+  padding-bottom: 10px;
   background-color: white;
   color: #660738;
-  font-size: 1rem;
-  font-weight: normal;
 }
