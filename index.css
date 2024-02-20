@@ -200,63 +200,19 @@ section {
   scale: 50%;
 }
 /* Small Laptops/Desktops */
-@media (min-width: 767px) and (max-width: 1440px) {
-  .about h1 {
-    font-size: 58px;
+@media (min-width: 767px) and (max-width: 1500px) {
+  .about-div h1 {
+    font-size: 4rem;
   }
-  .about p {
-    overflow: scroll;
+  .about-div p {
+    font-size: 1rem;
   }
 } /* SmartPhones */
 @media (min-width: 320px) and (max-width: 480px),
   (min-width: 480px) and (max-width: 767px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-content: center;
-    align-items: center;
-    height: 1000px;
-  }
-  .about h1 {
-    font-size: 50px;
-    padding-top: 50px;
-  }
-  .about p {
-    padding-bottom: 50px;
-    text-align: center;
-    overflow: scroll;
-    display: flex;
-    flex-direction: column;
-  }
-  .about img {
-    margin-inline: 50px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    image-rendering: auto;
-  }
 }
 /* mini SmartPhones */
 @media (max-width: 320px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-content: center;
-    align-items: center;
-    height: 1000px;
-  }
-  .about h1 {
-    font-size: 50px;
-    text-align: center;
-  }
-  .about p {
-    display: flex;
-    flex-direction: column;
-  }
-  .about img {
-    width: 75%;
-  }
 }
 /* SKILLS SECTION */
 .skills {
