@@ -6,7 +6,6 @@
 /* H1 */
 .sofia-regular {
   font-family: "Sofia", cursive;
-
   font-style: normal;
 }
 /* H3 */
@@ -184,6 +183,8 @@ section {
   align-items: center;
   font-size: 5rem;
   font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 25px;
   color: #660738;
 }
 
