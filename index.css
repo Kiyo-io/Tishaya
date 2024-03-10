@@ -92,11 +92,6 @@ li a:hover {
   }
 }
 
-section {
-  display: block;
-  height: 100dvh;
-}
-
 .sticky {
   position: fixed;
   z-index: 1;
@@ -380,6 +375,7 @@ section {
   }
 
   .project-display h3 {
+    display: none;
     font-size: 15px;
   }
   .project-display a {
@@ -389,8 +385,8 @@ section {
   }
 }
 #skill {
-  scale: 80%;
-  width: 100%;
+  scale: 30%;
+  width: 70%;
 }
 
 @media (max-width: 320px) {
@@ -400,6 +396,7 @@ section {
     height: 75px;
   }
   .project-display h3 {
+    display: none;
     font-size: 1rem;
   }
   .project-display a {
@@ -410,8 +407,8 @@ section {
   }
 }
 #skill {
-  scale: 50%;
-  width: 125%;
+  scale: 45%;
+  width: 70%;
 }
 /* CONTACT */
 .contact {
