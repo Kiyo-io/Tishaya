@@ -91,9 +91,6 @@ li a:hover {
   .navbar-list li > a {
     font-size: 15px;
   }
-  .navbar-list {
-    margin-right: 60px;
-  }
 }
 
 section {
